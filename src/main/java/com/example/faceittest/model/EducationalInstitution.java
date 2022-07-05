@@ -1,14 +1,12 @@
 package com.example.faceittest.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+
 import lombok.Data;
 
 @Data
 @Entity
+@Table(name = "educational_institutions")
 public class EducationalInstitution {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
